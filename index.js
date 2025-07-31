@@ -7,9 +7,12 @@ const containerEl=document.getElementById("container")
 inputBtn.addEventListener("click",function(){
    myLeads.push(inputEl.value)
 //    console.log(myLeads)
+renderLeads()
   
 })
-let listItems=""
+
+function renderLeads(){
+    let listItems=""
 for(let i=0;i<myLeads.length;i++){
 
     // console.log(myLeads[i])
@@ -18,6 +21,8 @@ for(let i=0;i<myLeads.length;i++){
     
 }
 ulEl.innerHTML=listItems
+}
+
 // containerEl.innerHTML+="<button onclick='btnclick()'> click me </button>"
 
 const cont=document.getElementById("container")
