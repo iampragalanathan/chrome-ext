@@ -9,14 +9,23 @@ inputBtn.addEventListener("click",function(){
 //    console.log(myLeads)
   
 })
-
+let listItems=""
 for(let i=0;i<myLeads.length;i++){
 
     // console.log(myLeads[i])
-    ulEl.innerHTML+= "<li>"+ myLeads[i]+ "</li> "
+    // ulEl.innerHTML+= "<li>"+ myLeads[i]+ "</li> "
+    listItems+="<li>" +myLeads[i] +"</li>"
     
 }
-containerEl.innerHTML+="<button> click me </button>"
+ulEl.innerHTML=listItems
+// containerEl.innerHTML+="<button onclick='btnclick()'> click me </button>"
+
+const cont=document.getElementById("container")
+cont.innerHTML="<button id='butn'> click me </button>"
+
+document.getElementById("butn").addEventListener("click",function(){
+    cont.innerHTML+= "<img style='display:block'id='immg'src='https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg'>"
+})
 
 
 
