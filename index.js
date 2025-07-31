@@ -18,7 +18,9 @@ for(let i=0;i<myLeads.length;i++){
 
     // console.log(myLeads[i])
     // ulEl.innerHTML+= "<li>"+ myLeads[i]+ "</li> "
-    listItems+="<li> <a href="+myLeads[i] + "</a></li>"
+    // listItems+="<li> <a href='"+myLeads[i]+" '>" +myLeads[i] + "</a></li>"
+    
+
     
 }
 ulEl.innerHTML=listItems
