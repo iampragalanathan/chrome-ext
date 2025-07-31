@@ -6,6 +6,7 @@ const containerEl=document.getElementById("container")
 
 inputBtn.addEventListener("click",function(){
    myLeads.push(inputEl.value)
+   inputEl.value=""
 //    console.log(myLeads)
 renderLeads()
   
@@ -25,12 +26,12 @@ ulEl.innerHTML=listItems
 
 // containerEl.innerHTML+="<button onclick='btnclick()'> click me </button>"
 
-const cont=document.getElementById("container")
-cont.innerHTML="<button id='butn'> click me </button>"
+// const cont=document.getElementById("container")
+// cont.innerHTML="<button id='butn'> click me </button>"
 
-document.getElementById("butn").addEventListener("click",function(){
-    cont.innerHTML+= "<img style='display:block'id='immg'src='https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg'>"
-})
+// document.getElementById("butn").addEventListener("click",function(){
+//     cont.innerHTML+= "<img style='display:block'id='immg'src='https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg'>"
+// })
 
 
 
