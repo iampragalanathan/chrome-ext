@@ -49,5 +49,13 @@ ulEl.innerHTML=listItems
 
 
 
+let mobile=["iphone","realme","infinix","redmi"]
+// console.log(mobile)
+localStorage.setItem("brand",JSON.stringify(mobile))
+let smartphone =JSON.parse(localStorage.getItem("brand"))
+mobile.push("nothing","tecno")
+console.log(mobile)
+localStorage.setItem("brand",JSON.stringify(mobile))
+ smartphone =JSON.parse(localStorage.getItem("brand"))
 
 
