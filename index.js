@@ -36,5 +36,10 @@ ulEl.innerHTML=listItems
 //     cont.innerHTML+= "<img style='display:block'id='immg'src='https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg'>"
 // })
 
+localStorage.setItem("myName",123)
+const local=localStorage.getItem("myName")
+console.log(local)
+console.log(typeof local)
+
 
 
