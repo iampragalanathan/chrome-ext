@@ -1,4 +1,4 @@
-const myLeads=[]
+let myLeads=[]
 const inputBtn=document.getElementById("input-btn")
 const inputEl=document.getElementById("input-el")
 const ulEl=document.getElementById("ul-el")
@@ -6,13 +6,15 @@ const containerEl=document.getElementById("container")
 
 
 let leadsFromLocalStorage=JSON.parse(localStorage.getItem("myleads"))
-console.log(leadsFromLocalStorage)
+// console.log(leadsFromLocalStorage)
 if( leadsFromLocalStorage){
 
-    
+    myLeads=leadsFromLocalStorage
      renderLeads()
-  
-
+}
+else{
+    
+    ulEl.textContent="no data to show,please give input and click save input button"
 }
 
 
