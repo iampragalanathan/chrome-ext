@@ -34,6 +34,8 @@ for(let i=0;i<myLeads.length;i++){
 ulEl.innerHTML=listItems
 }
 
+// ==============innerHTML=======================
+
 // containerEl.innerHTML+="<button onclick='btnclick()'> click me </button>"
 
 // const cont=document.getElementById("container")
@@ -54,8 +56,6 @@ ulEl.innerHTML=listItems
 // console.log(local)
 // console.log(typeof local)
 
-
-
 // let mobile=["iphone","realme","infinix","redmi"]
 // // console.log(mobile)
 // localStorage.setItem("brand",JSON.stringify(mobile))
@@ -65,15 +65,14 @@ ulEl.innerHTML=listItems
 // localStorage.setItem("brand",JSON.stringify(mobile))
 //  smartphone =JSON.parse(localStorage.getItem("brand"))
 
-
-
- 
 // let fruits=`["apple","orange"]`
 // fruits=JSON.parse(fruits)
 // fruits.push("kiwi")
 // localStorage.setItem("fruitsArr",JSON.stringify(fruits))
 // const fromLocal=JSON.parse(localStorage.getItem("fruitsArr"))
 // console.log(fromLocal)
+
+// =========Truthy or Falsy====================
 
 console.log(Boolean(undefined))   //falsy
 console.log(Boolean("")) //falsy
