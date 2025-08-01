@@ -4,10 +4,17 @@ const inputEl=document.getElementById("input-el")
 const ulEl=document.getElementById("ul-el")
 const containerEl=document.getElementById("container")
 
+
+let fromLocal=JSON.parse(localStorage.getItem("myleads"))
+console.log(fromLocal)
+
 inputBtn.addEventListener("click",function(){
    myLeads.push(inputEl.value)
    inputEl.value=""
 //    console.log(myLeads)
+localStorage.setItem("myleads",JSON.stringify(myLeads))
+// let box= localStorage.getItem('leads')
+// console.log(box)
 renderLeads()
   
 })
@@ -49,13 +56,21 @@ ulEl.innerHTML=listItems
 
 
 
-let mobile=["iphone","realme","infinix","redmi"]
+// let mobile=["iphone","realme","infinix","redmi"]
+// // console.log(mobile)
+// localStorage.setItem("brand",JSON.stringify(mobile))
+// let smartphone =JSON.parse(localStorage.getItem("brand"))
+// mobile.push("nothing","tecno")
 // console.log(mobile)
-localStorage.setItem("brand",JSON.stringify(mobile))
-let smartphone =JSON.parse(localStorage.getItem("brand"))
-mobile.push("nothing","tecno")
-console.log(mobile)
-localStorage.setItem("brand",JSON.stringify(mobile))
- smartphone =JSON.parse(localStorage.getItem("brand"))
+// localStorage.setItem("brand",JSON.stringify(mobile))
+//  smartphone =JSON.parse(localStorage.getItem("brand"))
 
 
+// let fruits=`["apple","orange"]`
+
+// fruits=JSON.parse(fruits)
+// fruits.push("kiwi")
+// localStorage.setItem("fruitsArr",JSON.stringify(fruits))
+
+// const fromLocal=JSON.parse(localStorage.getItem("fruitsArr"))
+// console.log(fromLocal)
