@@ -37,9 +37,13 @@ ulEl.innerHTML=listItems
 // })
 
 localStorage.setItem("myName",[123,"mango",12.5,"kiwi"])
+localStorage.setItem("user" ,123)
+localStorage.setItem("product","iphone")
 const local=localStorage.getItem("myName")
-console.log(local)
-console.log(typeof local)
+localStorage.removeItem("user")
+// console.log(local)
+// console.log(typeof local)
+
 
 
 
