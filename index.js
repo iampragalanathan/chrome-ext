@@ -43,7 +43,7 @@ ulEl.innerHTML=listItems
 //     cont.innerHTML+= "<img style='display:block'id='immg'src='https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg'>"
 // })
 
-
+// ==============Localstorage===================
 
 // localStorage.setItem("myName",[123,"mango",12.5,"kiwi"])
 // localStorage.setItem("user" ,123)
@@ -66,12 +66,12 @@ ulEl.innerHTML=listItems
 //  smartphone =JSON.parse(localStorage.getItem("brand"))
 
 
-// let fruits=`["apple","orange"]`
 
+ 
+// let fruits=`["apple","orange"]`
 // fruits=JSON.parse(fruits)
 // fruits.push("kiwi")
 // localStorage.setItem("fruitsArr",JSON.stringify(fruits))
-
 // const fromLocal=JSON.parse(localStorage.getItem("fruitsArr"))
 // console.log(fromLocal)
 
