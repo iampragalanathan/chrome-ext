@@ -41,6 +41,7 @@ localStorage.setItem("user" ,123)
 localStorage.setItem("product","iphone")
 const local=localStorage.getItem("myName")
 localStorage.removeItem("user")
+// localStorage.clear()
 // console.log(local)
 // console.log(typeof local)
 
