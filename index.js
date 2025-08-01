@@ -36,14 +36,17 @@ ulEl.innerHTML=listItems
 //     cont.innerHTML+= "<img style='display:block'id='immg'src='https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg'>"
 // })
 
-localStorage.setItem("myName",[123,"mango",12.5,"kiwi"])
-localStorage.setItem("user" ,123)
-localStorage.setItem("product","iphone")
-const local=localStorage.getItem("myName")
-localStorage.removeItem("user")
+
+
+// localStorage.setItem("myName",[123,"mango",12.5,"kiwi"])
+// localStorage.setItem("user" ,123)
+// localStorage.setItem("product","iphone")
+// const local=localStorage.getItem("myName")
+// localStorage.removeItem("user")
 // localStorage.clear()
 // console.log(local)
 // console.log(typeof local)
+
 
 
 
