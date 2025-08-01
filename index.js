@@ -7,6 +7,15 @@ const containerEl=document.getElementById("container")
 
 let leadsFromLocalStorage=JSON.parse(localStorage.getItem("myleads"))
 console.log(leadsFromLocalStorage)
+if( leadsFromLocalStorage=true){
+
+    localStorage.setItem("myleads",JSON.stringify(myLeads))
+     renderLeads()
+  
+
+}
+
+
 
 inputBtn.addEventListener("click",function(){
    myLeads.push(inputEl.value)
@@ -74,18 +83,18 @@ ulEl.innerHTML=listItems
 
 // =========Truthy or Falsy====================
 
-console.log(Boolean(undefined))   //falsy
-console.log(Boolean("")) //falsy
-console.log(Boolean(null)) //falsy
-console.log(Boolean(0)) //falsy
-console.log(Boolean(false)) //falsy
-console.log(Boolean("false")) //truthy
-console.log(Boolean(true)) //truthy
-console.log(Boolean("hi")) //truthy
-console.log(Boolean([])) //truthy
-console.log(Boolean({})) //truthy
-console.log(Boolean(1235)) //truthy
-console.log(Boolean(NaN)) //falsy
+// console.log(Boolean(undefined))   //falsy
+// console.log(Boolean("")) //falsy
+// console.log(Boolean(null)) //falsy
+// console.log(Boolean(0)) //falsy
+// console.log(Boolean(false)) //falsy
+// console.log(Boolean("false")) //truthy
+// console.log(Boolean(true)) //truthy
+// console.log(Boolean("hi")) //truthy
+// console.log(Boolean([])) //truthy
+// console.log(Boolean({})) //truthy
+// console.log(Boolean(1235)) //truthy
+// console.log(Boolean(NaN)) //falsy
 
 
 
