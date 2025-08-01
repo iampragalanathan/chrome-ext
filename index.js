@@ -74,3 +74,21 @@ ulEl.innerHTML=listItems
 
 // const fromLocal=JSON.parse(localStorage.getItem("fruitsArr"))
 // console.log(fromLocal)
+
+console.log(Boolean(undefined))   //falsy
+console.log(Boolean("")) //falsy
+console.log(Boolean(null)) //falsy
+console.log(Boolean(0)) //falsy
+console.log(Boolean(false)) //falsy
+console.log(Boolean("false")) //truthy
+console.log(Boolean(true)) //truthy
+console.log(Boolean("hi")) //truthy
+console.log(Boolean([])) //truthy
+console.log(Boolean({})) //truthy
+console.log(Boolean(1235)) //truthy
+console.log(Boolean(NaN)) //falsy
+
+
+
+
+
