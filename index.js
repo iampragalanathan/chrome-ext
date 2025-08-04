@@ -70,13 +70,14 @@ for(let i=0;i<leads.length;i++){
 ulEl.innerHTML=listItems
 }
 
-let tab={
-  url: "https://www.google.com/"
-}
+const tab=[{
+  url: "https://www.google.com/",
+},]
 tabBtn.addEventListener("click",function(){
-     console.log(tab.url)
-     myLeads.push(tab.url)
+    //  console.log(tab[0].url)
+     myLeads.push(tab[0].url)
      localStorage.setItem("myleads",JSON.stringify(myLeads))
+     render(myLeads)
 })
 
 
