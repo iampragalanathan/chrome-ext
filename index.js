@@ -37,13 +37,20 @@ deleteEl.addEventListener('click',function(){
 
 
 inputBtn.addEventListener("click",function(){
-   myLeads.push(inputEl.value)
+   if(inputEl.value){
+
+    myLeads.push(inputEl.value)
    inputEl.value=""
 //    console.log(myLeads)
 localStorage.setItem("myleads",JSON.stringify(myLeads))
 // let box= localStorage.getItem('leads')
 // console.log(box)
 renderLeads()
+   } 
+   else{
+
+    ulEl.textContent="type something in input box"
+   }
   
 })
 
