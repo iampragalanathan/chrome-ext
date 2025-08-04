@@ -4,6 +4,7 @@ const inputEl=document.getElementById("input-el")
 const ulEl=document.getElementById("ul-el")
 const containerEl=document.getElementById("container")
 const deleteEl=document.getElementById("delete-btn")
+const tabBtn=document.getElementById("tab-btn")
 
 
 let leadsFromLocalStorage=JSON.parse(localStorage.getItem("myleads"))
@@ -68,6 +69,16 @@ for(let i=0;i<leads.length;i++){
 }
 ulEl.innerHTML=listItems
 }
+
+let tab={
+  url: "https://www.google.com/"
+}
+tabBtn.addEventListener("click",function(){
+     console.log(tab.url)
+     myLeads.push(tab.url)
+     localStorage.setItem("myleads",JSON.stringify(myLeads))
+})
+
 
 
 
