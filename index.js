@@ -11,7 +11,7 @@ let leadsFromLocalStorage=JSON.parse(localStorage.getItem("myleads"))
 if( leadsFromLocalStorage){
 
     myLeads=leadsFromLocalStorage
-     renderLeads()
+     render(myLeads)
 }
 else{
     
@@ -24,7 +24,7 @@ deleteEl.addEventListener('click',function(){
      localStorage.clear()
      myLeads=[]
     //  console.log(myLeads)
-    renderLeads()
+    render(myLeads)
 
   if(leadsFromLocalStorage ===null && myLeads.length <=0){
 
@@ -45,7 +45,7 @@ inputBtn.addEventListener("click",function(){
 localStorage.setItem("myleads",JSON.stringify(myLeads))
 // let box= localStorage.getItem('leads')
 // console.log(box)
-renderLeads()
+render(myLeads)
    } 
    else{
 
@@ -54,13 +54,13 @@ renderLeads()
   
 })
 
-function renderLeads(){
+function render(leads){
     let listItems=""
-for(let i=0;i<myLeads.length;i++){
+for(let i=0;i<leads.length;i++){
 
    
     // listItems+="<li> <a href='"+myLeads[i]+" '>" +myLeads[i] + "</a></li>"
-      listItems+=`<li> <a target="_blank" href="${myLeads[i]}"> ${myLeads[i]} </a> </li>`
+      listItems+=`<li> <a target="_blank" href="${leads[i]}"> ${leads[i]} </a> </li>`
 
 
 
@@ -71,5 +71,40 @@ ulEl.innerHTML=listItems
 
 
 
+// ========
+// function sum(a,b){
+//   return a+b
+// }
+// // console.log(sum(8,9))
 
+// function print(message){
 
+//   console.log(`HI ${message} Mike`)
+// }
+
+// // print ("Good Morning")
+
+// let userData=["john","Ben","Ram","Anita"]
+// function looper(userArr){
+
+//   let dataVar=""
+//   for(let i=0; i<userArr.length;i++){
+//     dataVar+=userArr[i] + " "}
+//     return dataVar
+// }
+// console.log(looper(userData))
+
+// let userObj={
+
+//   name: "MIke",
+//   age:"25",
+//   job:"dev",
+//   skill:"React"
+
+// }
+// function objPrint(obj){
+
+//   console.log(`The employee name is ${obj.name} age is ${obj.age}, job is ${obj.job}. He is skilled in ${obj.skill}`)
+// }
+
+// objPrint(userObj)
