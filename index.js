@@ -74,7 +74,7 @@ const tab=[{
   url: "https://www.google.com/",
 },]
 tabBtn.addEventListener("click",function(){
-    //  console.log(tab[0].url)
+    //  console.log(tab[0].url)//
      myLeads.push(tab[0].url)
      localStorage.setItem("myleads",JSON.stringify(myLeads))
      render(myLeads)
